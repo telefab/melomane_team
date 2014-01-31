@@ -1,0 +1,42 @@
+import os
+from time import sleep
+import serial
+ser = serial.Serial('/dev/ttyACM0', 9600)
+
+
+while (1):
+    note = ser.readline(1)
+    if(note =="a"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_C4_1_forte_normal.mp3 &')
+    elif(note=="b"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_Cs4_1_forte_normal.mp3 &')
+    elif(note =="c"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_D4_1_forte_normal.mp3 &')
+    elif(note=="d"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_Ds4_1_forte_normal.mp3 &')
+    elif(note=="e"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_E4_1_forte_normal.mp3 &')
+    elif(note=="f"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_F4_1_forte_normal.mp3 &')
+    elif(note=="g"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_Fs4_1_forte_normal.mp3 &')
+    elif(note=="h"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_G4_1_forte_normal.mp3 &')
+    elif(note=="i"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_Gs4_1_forte_normal.mp3 &')
+    elif(note=="j"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_A4_1_forte_normal.mp3 &')
+    elif(note=="k"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_As4_1_forte_normal.mp3 &')
+    elif(note=="l"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_B4_1_forte_normal.mp3 &')
+    elif(note=="m"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_C5_1_forte_normal.mp3 &')
+    elif(note=="n"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_Cs5_1_forte_normal.mp3 &')
+    elif(note=="o"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_D5_1_forte_normal.mp3 &')
+    elif(note=="p"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_Ds5_1_forte_normal.mp3 &')
+    elif(note=="q"):
+        os.system('mpg321 ~/Bureau/saxophone/1 seconde/saxophone_E5_1_forte_normal.mp3 &')
